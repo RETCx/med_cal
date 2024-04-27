@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicine Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="info">
+            <h1 style="background-color: #2ecc71; padding: 10px; margin-bottom: 20px; color: #fff; border-radius: 20px;"><i class="fas fa-laptop-medical"></i> Medicine Calculator</h1>
+            <form id="medicineForm">
+              <label for="weight">Weight (kg):</label>
+              <input type="text" id="weight" name="weight" placeholder="Enter weight in kilograms" required>
+              <label for="height">Height (m):</label>
+              <input type="text" id="height" name="height" placeholder="Enter height in meters" required>          
+              <label for="medication">Select Medication:</label>
+              <select id="medication" name="medication" required>
+                <option value="">Select Medication</option>
+                <option value="paracetamol">Paracetamol (Acetaminophen)</option>
+                <option value="ibuprofen">Ibuprofen</option>
+                <option value="brompheniramine">Brompheniramine</option>
+                <option value="Glyceryl Guaiacolate Syrup">Glyceryl Guaiacolate Syrup</option>
+              </select>
+              <div id="doseStrengthInput" style="display: none;">
+                <label for="doseStrength">Dose Strength (mg/tablet):</label>
+                <input type="text" id="doseStrength" name="doseStrength" placeholder="Enter dose strength in mg/tablet" >
+              </div>
+              <button type="submit"><i class="fas fa-calculator"></i> Calculate</button>
+            </form>
+            <div id="result"></div>
+            <div id="content_Med"></div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </body>
+</html>
